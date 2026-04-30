@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch. Build responsive websites and modern web apps using HTML, CSS, JavaScript, React, and Node.js.",
+    "image": "https://i.ibb.co.com/9H0B6KX/web-dev.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master UI/UX fundamentals, wireframing, prototyping, and modern design systems using Figma. Create professional user-friendly designs.",
+    "image": "https://i.ibb.co.com/ZTtB3Kp/uiux.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing & SEO Fundamentals",
+    "instructor": "David Miller",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn SEO, Facebook Ads, Google Ads, content marketing, and branding. Start promoting products and services effectively online.",
+    "image": "https://i.ibb.co.com/8YzTj3Y/marketing.jpg",
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "Advanced React & Next.js Development",
+    "instructor": "Emily Johnson",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Learn advanced React patterns, Next.js App Router, server components, authentication, API routes, and deployment best practices.",
+    "image": "https://i.ibb.co.com/bFRPp7g/nextjs.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "Graphic Design Essentials",
+    "instructor": "Michael Brown",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn Photoshop basics, Canva design techniques, typography, color theory, and logo creation for social media and business branding.",
+    "image": "https://i.ibb.co.com/wC1YJX7/graphic.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 6,
+    "title": "Business & Freelancing Blueprint",
+    "instructor": "Robert Wilson",
+    "duration": "14 hours",
+    "rating": 4.4,
+    "level": "Intermediate",
+    "description": "Learn freelancing strategy, client communication, proposal writing, pricing, and how to build a strong portfolio to earn online.",
+    "image": "https://i.ibb.co.com/4Vv5c8x/freelancing.jpg",
+    "category": "Business"
+  }
+]
