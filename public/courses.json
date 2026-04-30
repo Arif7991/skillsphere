@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch. Build responsive websites and modern web apps using HTML, CSS, JavaScript, React, and Node.js.",
-    "image": "https://i.ibb.co.com/9H0B6KX/web-dev.jpg",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Master UI/UX fundamentals, wireframing, prototyping, and modern design systems using Figma. Create professional user-friendly designs.",
-    "image": "https://i.ibb.co.com/ZTtB3Kp/uiux.jpg",
+    "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1000&q=80",
     "category": "Design"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Learn SEO, Facebook Ads, Google Ads, content marketing, and branding. Start promoting products and services effectively online.",
-    "image": "https://i.ibb.co.com/8YzTj3Y/marketing.jpg",
+    "image": "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1000&q=80",
     "category": "Marketing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Learn advanced React patterns, Next.js App Router, server components, authentication, API routes, and deployment best practices.",
-    "image": "https://i.ibb.co.com/bFRPp7g/nextjs.jpg",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80",
     "category": "Development"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Learn Photoshop basics, Canva design techniques, typography, color theory, and logo creation for social media and business branding.",
-    "image": "https://i.ibb.co.com/wC1YJX7/graphic.jpg",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
     "category": "Design"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.4,
     "level": "Intermediate",
     "description": "Learn freelancing strategy, client communication, proposal writing, pricing, and how to build a strong portfolio to earn online.",
-    "image": "https://i.ibb.co.com/4Vv5c8x/freelancing.jpg",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",
     "category": "Business"
   }
 ]
