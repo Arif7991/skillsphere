@@ -1,64 +1,105 @@
-import Link from "next/link";
+"use client";
 
-export default function RegisterPage() {
+import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
+
+
+
+const RegisterPage = () => {
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  const handleRegisterFunc = async (data) => {
+      const {email, name, photo, password} = data;
+
+      const {data: res, error}= await authClient.signUp.email({
+         name: name, // required
+    email: email, // required
+    password: password, // required
+    image: photo,
+    callbackURL: "/",
+
+      })
+      console.log(res, error)
+      if(error){
+        alert(error.message)
+      }if(res){
+        alert('SignUp Successful')
+      }
+  };
+
+
   return (
-    <div className="card w-full max-w-md shadow-xl bg-base-100">
-      <div className="card-body">
-        <h2 className="text-3xl font-bold text-center text-primary">
-          Register
+    <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100">
+      <div className="p-4 rounded-xl bg-white">
+        <h2 className="font-bold text-3xl text-center mb-6">
+          Register your account
         </h2>
 
-        <form className="mt-6 space-y-4">
-          <div>
-            <label className="label font-medium">Name</label>
+        <form className="space-y-4" onSubmit={handleSubmit(handleRegisterFunc)}>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Name</legend>
             <input
               type="text"
-              placeholder="Enter your name"
-              className="input input-bordered w-full"
+              className="input"
+              placeholder="Type here name"
+              {...register("name", { required: true })}
             />
-          </div>
-
-          <div>
-            <label className="label font-medium">Email</label>
+          {errors.name && <span>This field is required</span>}
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Photo Url</legend>
+            <input
+              type="text"
+              className="input"
+              placeholder="Type here photo url"
+              {...register("photo", { required: true })}
+            />
+          {errors.photo && <span>This field is required</span>}
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Email</legend>
             <input
               type="email"
-              placeholder="Enter your email"
-              className="input input-bordered w-full"
+              className="input"
+              placeholder="Type here email"
+              {...register("email", { required: true })}
             />
-          </div>
-
-          <div>
-            <label className="label font-medium">Photo URL</label>
-            <input
-              type="text"
-              placeholder="Enter photo URL"
-              className="input input-bordered w-full"
-            />
-          </div>
-
-          <div>
-            <label className="label font-medium">Password</label>
+          {errors.email && <span>This field is required</span>}
+          </fieldset>
+          <fieldset className="fieldset relative">
+            <legend className="fieldset-legend">Password</legend>
             <input
               type="password"
-              placeholder="Enter password"
-              className="input input-bordered w-full"
+              className="input"
+              placeholder="Type here password"
+              {...register("password", { required: true })}
             />
-          </div>
+            <span
+              className="absolute right-2 top-4 cursor-pointer"
+            >
+             
+            </span>
+            
+          </fieldset>
 
-          <button className="btn btn-primary w-full">Register</button>
+          <button className="btn w-full bg-slate-800 text-white">Register</button>
         </form>
 
-        <div className="divider">OR</div>
-
-        <button className="btn btn-outline w-full">Continue with Google</button>
-
-        <p className="text-center mt-4">
-          Already have an account?{" "}
-          <Link href="/login" className="text-primary font-semibold">
-            Login
+        <p className="mt-4">
+          Don't have an account?{" "}
+          <Link href={"/register"} className="text-blue-500">
+            Register
           </Link>
         </p>
       </div>
     </div>
   );
-}
+};
+
+export default RegisterPage

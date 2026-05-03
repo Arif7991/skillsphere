@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "SkillSphere",
-  description: "SkillSphere - Online Learning Platform",
+  description: "Online Learning Platform",
 };
 
 export default function RootLayout({ children }) {
@@ -12,17 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body>
         {children}
-
-        <ToastContainer
-          position="top-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          pauseOnHover
-          draggable
-          theme="light"
-        />
+        <ToastContainer position="top-right" />
       </body>
     </html>
   );

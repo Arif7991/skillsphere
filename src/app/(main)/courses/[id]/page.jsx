@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 export default function CourseDetailsPage() {
   const { id } = useParams();
@@ -46,7 +47,8 @@ export default function CourseDetailsPage() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-10 py-10">
+    <ProtectedRoute>
+        <div className="max-w-6xl mx-auto px-4 md:px-10 py-10">
       {/* Course Banner */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
@@ -117,5 +119,7 @@ export default function CourseDetailsPage() {
         </div>
       </div>
     </div>
+    </ProtectedRoute>
+    
   );
 }
