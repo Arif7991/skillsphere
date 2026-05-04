@@ -92,9 +92,9 @@ const RegisterPage = () => {
         </form>
 
         <p className="mt-4">
-          Don't have an account?{" "}
-          <Link href={"/register"} className="text-blue-500">
-            Register
+           have an account?
+          <Link href={"/login"} className="text-blue-500">
+            Login
           </Link>
         </p>
       </div>

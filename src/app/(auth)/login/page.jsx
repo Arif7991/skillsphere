@@ -1,5 +1,5 @@
 "use client";
-
+import { toast } from "react-toastify"
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -18,17 +18,20 @@ const LoginPage = () => {
 
 
 
-        const { data: res, error } = await authClient.signIn.email({
+  const { data: res, error } = await authClient.signIn.email({
     email: data.email, // required
     password: data.password, // required
     rememberMe: true,
     callbackURL: "/",
 });
 
-console.log(res, error)
-if(error){
-  alert(error.message)
+;
+
+if (error) {
+  toast.error(error?.message || error?.statusText || "Login failed");
+  return;
 }
+toast.success("Login Successful");
     };
 
 
