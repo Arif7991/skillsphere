@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body>
         {children}
-        <ToastContainer position="top-right" />
+        <ToastContainer position="top-center" />
       </body>
     </html>
   );

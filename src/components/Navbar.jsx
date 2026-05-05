@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import useSession from "@/hooks/useSession";
 import { toast } from "react-toastify";
-
+import { FaMoon, FaSun } from "react-icons/fa";
+import ThemeProvider from "@/components/ThemeProvider";
 export default function Navbar() {
   const router = useRouter();
   const { session, loading } = useSession();
